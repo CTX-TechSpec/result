@@ -20,12 +20,12 @@
       <div id="content-container-center">
         <div id="choice">
           <div class="choice cats">
-            <div class="label">Yes!</div>
+            <div class="label">cat</div>
             <div class="stat">{{aPercent | number:1}}%</div>
           </div>
           <div class="divider"></div>
           <div class="choice dogs">
-            <div class="label">No!</div>
+            <div class="label">dog</div>
             <div class="stat">{{bPercent | number:1}}%</div>
           </div>
         </div>
@@ -36,9 +36,7 @@
       <span ng-if="total == 1">{{total}} vote</span>
       <span ng-if="total >= 2">{{total}} votes</span>
     </div>
-        <div id="hostname">
-          Processed by container ID {{hostname}}
-        </div>
+
     <script src="socket.io.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="app.js"></script>
